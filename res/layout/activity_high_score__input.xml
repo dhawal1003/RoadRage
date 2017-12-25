@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_high_score__input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/backdrop"
+    tools:context="com.example.kd.roadrage_new.HighScore_Input">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="HighScore!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Highscore_input_textView"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textColor="@android:color/holo_orange_light" />
+
+            <TextView
+                android:text="5000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/score_textView"
+                android:textSize="80sp"
+                android:textColor="@android:color/background_light"
+                android:textAlignment="center"
+                android:padding="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/ctl_highscore_player"
+                android:hint="Enter your Name"
+                android:background="@drawable/custom_textbg"
+                android:textColor="?android:attr/actionMenuTextColor"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                android:soundEffectsEnabled="true"
+                android:textIsSelectable="true"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/highscore_save_button"
+                android:background="@drawable/custom_button1_click"
+                android:textColor="@android:color/background_light"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:layout_margin="15dp" />
+
+            <Button
+                android:text="Go to Menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tomenu_button" android:background="@drawable/custom_button1_click"
+                android:textColor="@android:color/background_light"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
